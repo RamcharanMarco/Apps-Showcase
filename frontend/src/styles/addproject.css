@@ -1,0 +1,64 @@
+.addproject{
+    min-height: 90vh;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    padding: 20px;
+    background-color: aquamarine;
+}
+
+.photoupload{
+    display: flex;
+    flex-direction: column;
+    border-bottom: 1px solid black;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    background-color: burlywood;
+}
+
+.addproject input, .addproject select, .addproject textarea, .addproject button{
+    height: 35px;
+    margin: 6px 0px;
+    width: 300px;
+}
+
+.addproject .addtechs{
+    display: flex;
+    justify-content: center;
+    align-items:flex;
+    border-bottom: 1px solid black;
+    padding: 10px;
+    background-color: crimson;
+}
+
+.addproject .add-details{
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    padding: 10px;
+    flex-direction: column;
+    background-color: blue;
+    padding: 20px;
+}
+
+.item:hover{
+    background: yellow;
+}
+
+input[type="file"] {
+    display: none;
+}
+.custom-file-upload {
+    border: 1px solid #ccc;
+    display: inline-block;
+    padding: 6px 12px;
+    cursor: pointer;
+}
+
+.addproject .chosentechs{
+    display: flex;
+    text-align: center;
+    gap: 10px;
+}

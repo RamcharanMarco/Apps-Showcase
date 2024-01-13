@@ -1,0 +1,70 @@
+.signup{
+    background-color: azure;
+    height: 90vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.signup .heading{
+    margin: 15px;
+}
+
+.container{
+    background-color: azure;
+    height: 70%;
+    width: 70%;
+    display: flex;
+}
+
+.box{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.content{
+    flex-grow: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.navigation{
+    height: 20%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.creating{
+    text-align: center;
+}
+
+
+.content input{
+    height: 37px;
+    width: 300px;
+    margin: 10px;
+}
+
+
+.navigation button{
+    margin: 20px;
+    padding: 20px;
+    background-color: azure;
+    color: black;
+    border: 1px solid black;
+    outline: none;
+}
+
+.page1{
+    justify-content: flex-end;
+}
+
+.signup-button{
+    font-size: 3rem;
+}

@@ -1,0 +1,29 @@
+.login{
+    background-color: azure;
+    height: 90vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.login h1{
+    margin: 30px;
+}
+
+.login form{
+    display: flex;
+    flex-direction: column;
+}
+
+.login input{
+    height: 40px;
+    width: 300px; 
+    margin: 7px;
+}
+
+.login button{
+    padding: 10px; 
+    margin: 7px;
+}

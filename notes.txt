@@ -1,0 +1,37 @@
+public projects navbar
+what will our navbar need?
+filter by
+	type of project
+sortby
+	date
+	views
+	rating
+search	
+	search fir technoligies in array
+	an array will be sent back to the backend 
+	on enter we will add technologie
+search button
+	onclick we will perform the search
+clear filters
+	onclick clear filters and refetchdata
+
+pagination
+load more
+abd tell them how many projects they viewed
+
+scroll to top button on that page
+
+onhover display nav
+nav will be a size of 10px qith a arrow on it
+then when we click it will show
+
+public comments by user
+this will be done by gin gonic and golang mongoose
+we will do post requests
+
+add a comment
+add a like or dislike part
+add views everytime that project gets clicked we increemnt the view in the backend
+
+add a views on the user profile page
+the user profile page will be made with vuejs

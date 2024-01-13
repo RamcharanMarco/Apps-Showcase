@@ -1,0 +1,69 @@
+.projectsPage{
+    background-color: azure;
+    min-height: 90vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.projectsPage .container{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 10px;
+    padding: 10px;
+    background-color:azure;
+    width: 100%;
+}
+
+.projectsPage .container .box{
+    height: 200px;
+    position: relative;
+    border: 1px solid black;
+}
+
+.projectsPage .box img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    z-index: 2;
+}
+
+.projectsPage button{
+    height: 35px;
+    width: 300px;
+    margin: 20px;
+}
+
+.projectsPage #info{
+    position: absolute;
+    z-index: 500;
+}
+
+.projectsPage .empty{
+    height: 88vh;
+    background-color: azure;
+    display: flex;
+    justify-content:center ;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+}
+
+.projectsPage .empty *{
+    margin: 10px;
+}
+
+.projectsPage .empty a{
+    text-decoration: none;
+    color: whitesmoke;
+    background-color: black;
+    padding: 10px 20px;
+    font-size: 2rem;
+}
+
+.projectsPage .empty h1{
+    font-size: 3rem;
+}

@@ -1,0 +1,45 @@
+.userHome{
+    background-color: azure;
+    height: 90vh;
+    display: flex;
+    /*flex-direction: column;*/
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    color: black;
+}
+
+.userHome div{
+    flex-wrap: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.userHome .projects{
+    background-color: lightcyan;
+    width: 100%;
+    height: 100%;
+}
+
+.userHome .createproject{
+    background-color: azure;
+    width: 100%;
+    height: 100%;
+}
+
+.userHome .feedback{
+    width: 100%;
+    text-align: center;
+    background-color: lavender;
+    height: 100%;
+}
+
+.userHome a{
+    margin: 10px;
+    text-decoration: none;
+    padding: 10px 20px;
+    border: 1px solid black;
+    color: black;
+}

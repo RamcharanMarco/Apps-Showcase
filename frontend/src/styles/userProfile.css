@@ -1,0 +1,13 @@
+.userProfile{
+    height: 90vh;
+    background-color: teal;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.userProfile div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}

@@ -1,0 +1,28 @@
+a design document for a expressjs api.
+Include what the app is about, why i created it, the tech stack and the app features.where i am hosting the app
+and why i chose each technology in the tech stack
+
+This is a design document for an Express.js API that I created for a personal project. The app is a simple blog platform that allows users to create, edit, delete and comment on posts. The app also has authentication and authorization features to ensure security and privacy.
+
+I created this app to practice my web development skills and to learn more about the Express.js framework, which is one of the most popular and widely used tools for building web applications with Node.js. Express.js is a minimalist and flexible framework that provides a robust set of features for web and mobile applications. It also has a large and active community that supports its development and maintenance.
+
+The tech stack that I used for this app consists of the following components:
+
+- Express.js: As mentioned above, this is the framework that I used to build the API. It handles the routing, middleware, error handling and other aspects of the server-side logic. I chose Express.js because it is fast, lightweight and easy to use. It also has a lot of documentation and tutorials available online that helped me learn how to use it effectively.
+- MongoDB: This is the database that I used to store the data for the app. MongoDB is a NoSQL database that stores data in flexible, JSON-like documents. It is scalable, performant and suitable for dynamic and complex data models. I chose MongoDB because it works well with Express.js and Node.js, and because it allows me to create schemas and models that match the structure of the data in the app.
+- Mongoose: This is an object data modeling (ODM) library that I used to connect MongoDB with Express.js. Mongoose provides a schema-based solution to model the data in the app. It also provides validation, query building, business logic hooks and other features that make working with MongoDB easier and more convenient. I chose Mongoose because it simplifies the interaction between the database and the API, and because it helps me enforce data integrity and consistency.
+- JSON Web Token (JWT): This is a standard for creating access tokens that can be used to authenticate and authorize users in the app. JWTs are self-contained, digitally signed and encrypted tokens that contain information about the user and their permissions. They are sent in the HTTP headers of the requests and verified by the API. I chose JWT because it is a secure and stateless way of managing user sessions, and because it integrates well with Express.js and MongoDB.
+- bcrypt: This is a library that I used to hash and compare passwords in the app. bcrypt is a password hashing function that is based on the Blowfish cipher. It is secure, reliable and resistant to brute-force attacks. I chose bcrypt because it is one of the most recommended and widely used libraries for password hashing in Node.js applications.
+
+The app flow of the app is as follows:
+
+- A user can sign up for an account by providing their name, email and password. The password is hashed using bcrypt before being stored in the database. The user also receives a confirmation email with a link to activate their account.
+- A user can log in to their account by providing their email and password. The password is compared with the hashed version in the database using bcrypt. If the credentials are valid, the user receives a JWT that contains their user ID, name, email and role (admin or regular user). The JWT is stored in the local storage of the browser and sent in every request to the API.
+- A user can create a new post by providing a title, content and optionally an image. The post is stored in the database with a reference to the user who created it. The user can also edit or delete their own posts.
+- A user can view all posts or filter them by category, author or keyword. The posts are paginated and sorted by date or popularity. The user can also like or dislike posts or leave comments on them.
+- A user can view their own profile or other users' profiles. The profile shows the user's name, email, bio, avatar and posts. The user can also edit their own profile or change their password.
+- An admin user can perform all the actions of a regular user, as well as manage other users' accounts. The admin can view, edit or delete any user or post in the app.
+
+The app is hosted on Heroku, which is a cloud platform that allows me to deploy, run and scale web applications easily and quickly. I chose Heroku because it supports Node.js applications natively, provides a free tier for testing purposes, integrates well with MongoDB Atlas (the cloud service that hosts my database), offers various add-ons and tools for monitoring, logging, caching and other features, and has a simple and intuitive interface for managing my app.
+
+This concludes my design document for my Express.js API. I hope you find it informative and useful.

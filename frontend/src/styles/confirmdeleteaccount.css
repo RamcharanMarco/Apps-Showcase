@@ -1,0 +1,37 @@
+.confirmdeleteaccount{
+    background-color: azure;
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    top: 0;
+    left: 0;
+    position: fixed;
+    z-index: 500;
+}
+
+.confirmdeleteaccount .cancel{
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin: 20px;
+    font-size: 3rem;
+}
+
+.confirmdeleteaccount *{
+    margin: 5px;
+}
+
+.confirmdeleteaccount input, .confirmdeleteaccount button{
+    height: 35px;
+    width: 300px;
+    text-align: center;
+}
+
+.confirmdeleteaccount button{
+    background-color: black;
+    color: white;
+    border: none;
+}

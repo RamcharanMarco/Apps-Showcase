@@ -1,0 +1,113 @@
+import '../styles/userproject.css'
+import { useState } from 'react'
+
+const UserProjectPage = () => {
+
+  const [photo, setPhoto] = useState<string>('')
+  const [name, setName] = useState<string>('')
+  const [description, setDescription] = useState<string>('')
+  const [repo, setRepo] = useState<string>('')
+  const [demo, setDemo] = useState<string>('')
+  const [type, setType] = useState<string>('')
+  const [lib, setLib] = useState<string>('')
+  const [lang, setLang] = useState<string>('')
+  const [db, setDb] = useState<string>('')
+  const [css, setCss] = useState<string>('')
+  const [hosting, setHosting] = useState<string>('')
+
+  return (
+    <div className="userProjectPage">
+      <h1>project page</h1>
+      <p>id: 14h242v543445vvhhvt454hc5</p>
+      <div>
+        <div className="top">
+          <button>edit</button>
+          <button>done</button>
+          <button>cancel</button>
+        </div>
+        <div className="bottom">
+          <div>
+            <input type="file" />
+            <button>edit picture</button>
+          </div>
+          <div>
+          <input type="text" onChange={(e:any) => setName(e.target.value)} value={name} placeholder="name"/>
+          <select onChange={(e:any) => setType(e.target.value)} value={type}>
+            <h1>choose type of project</h1>
+            <option value="ui/ux">ui/ux</option>
+            <option value="frontend">frontend</option>
+            <option value="backend">backend</option>
+            <option value="fullstack">fullstack</option>
+            <option value="database">database</option>
+          </select>
+          <select onChange={(e:any) => setLang(e.target.value)} value={lang}>
+            <h1>choose languages you used</h1>
+            <option value="html">html</option>
+            <option value="css">css</option>
+            <option value="js">js</option>
+            <option value="ts">ts</option>
+            <option value="python">python</option>
+            <option value="node">node</option>
+            <option value="C#">c#</option>
+            <option value="scss">scss</option>
+            <option value="java">java</option>
+            <option value="php">php</option>
+            <option value="ruby">ruby</option>
+            <option value="golang">golang</option>
+          </select>
+          <select onChange={(e:any) => setLib(e.target.value)} value={lib}>
+            <h1>frameworks or libraries</h1>
+            <option value="react">react</option>
+            <option value="vue">vue</option>
+            <option value="angular">angular</option>
+            <option value="nuxt">nuxt</option>
+            <option value="nextjs">nextjs</option>
+            <option value="sveltekit">sveltekit</option>
+            <option value="webcomponents">web components</option>
+            <option value="expressjs">expressjs</option>
+            <option value="nestsj">nestjs</option>
+            <option value="django">django</option>
+            <option value="flask">flask</option>
+            <option value="fastapi">fastapi</option>
+            <option value="rubyonrails">ruby on rails</option>
+            <option value="rocket">rocket</option>
+            <option value="gin">gin</option>
+            <option value=".net">.net</option>
+            <option value="springboot">spring boot</option>
+            <option value="koa">koa</option>
+            <option value="laravel">laravel</option>
+          </select>
+          <select onChange={(e:any) => setDb(e.target.value)} value={db}>
+            <option value="">databases</option>
+            <option value="mongodb">mongodb</option>
+            <option value="mysql">mysql</option>
+            <option value="postgres">postgres</option>
+          </select>
+          <select onChange={(e:any) => setCss(e.target.value)} value={css}>
+            <option value="">css frameworks</option>
+            <option value="bootstrap">boostrap</option>
+            <option value="tailwind">tailwind</option>
+            <option value="chakra">chakra</option>
+            <option value="materialui">material ui</option>
+          </select>
+          <select onChange={(e:any) => setHosting(e.target.value)} value={hosting}>
+            <option value="">hosting</option>
+            <option value="aws">aws</option>
+            <option value="gc">google cloud</option>
+            <option value="azure">azure</option>
+            <option value="hostinger">hostinger</option>
+            <option value="heroku">heroku</option>
+            <option value="vercel">vercel</option>
+            <option value="netlify">netlify</option>
+            <option value="other">other</option>
+          </select>
+          <input type="text" placeholder='url' value={demo} onChange={(e:any) => setDemo(e.target.value)}/>
+          <input type="text" placeholder='repo' value={repo} onChange={(e:any) => setRepo(e.target.value)}/>
+          </div>
+        </div>
+      </div>
+    </div>
+  )
+}
+
+export default UserProjectPage

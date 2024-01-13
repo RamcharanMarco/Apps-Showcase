@@ -1,0 +1,56 @@
+.userProjectPage .project{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.userProjectPage{
+    background-color: azure;
+    min-height: 88vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.userProjectPage .projectnav{
+    background-color: green;
+    width: 100%;
+    text-align: right;
+}
+
+.userProjectPage .project-photo{
+    background-color: red;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    justify-content: center;
+    align-items: center;
+}
+
+.userProjectPage .project-photo img{
+    height: 200px;
+    width: 200px;
+}
+
+.userProjectPage .details{
+    background-color: blue;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.userProjectPage .details div{
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    background-color: chartreuse;
+    width: 100%;
+}
+

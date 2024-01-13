@@ -1,0 +1,62 @@
+.addtech-box{
+    background-color: azure;
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    top: 0;
+    left: 0;
+    position: fixed;
+    z-index: 500;
+}
+
+.addtech-box .cancel{
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin: 20px;
+    font-size: 3rem;
+}
+
+.con{
+    display: flex;
+    justify-content: center;
+}
+
+.con input{
+    width: 400px;
+
+}
+
+.con button{
+    width: fit-content;
+}
+
+.bx{
+    background-color: brown;
+    height: 70px;
+    overflow-y : auto;}
+
+.addtechs{
+    display: flex;
+    flex-direction: column;
+    width: 350px;
+}
+
+.tlist{
+    background-color: aqua;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 10px;
+    padding: 10px;
+    height: 70px;
+    overflow-y : auto;}
+
+.tlist *{
+    background-color: coral;
+    padding: 10px;
+}
